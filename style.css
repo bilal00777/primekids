@@ -114,11 +114,12 @@
      .webinar_div p {
          font-size: smaller;
          padding: 0;
-         
-   
+
+
      }
-     .webinar_div{
-        height: 70px;
+
+     .webinar_div {
+         height: 70px;
      }
 
      .webinar_div .EnrollNow {
@@ -144,41 +145,41 @@
 
 
  .navbar {
-    background-color: transparent;
-    /* No color for the navbar background */
-    border-bottom: 1px solid #ddd;
-    /* Light border at the bottom of the navbar */
-    backdrop-filter: blur(10px);
-    /* Applies a blur effect to the background */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Optional: Adds soft shadow for depth */
-    position: fixed;
-    /* Fixes the navbar at the top of the page */
-    width: 100%;
-    /* Ensures the navbar spans the full width */
-    top: 0px;
-    /* Ensures the navbar stays at the top of the screen */
-    left: 0;
-    /* Ensures the navbar stays aligned with the left edge */
-    z-index: 1000;
-    /* Keeps the navbar on top of other content */
-    transition: top 0.3s ease;
-    /* Smooth transition for top property changes */
-}
+     background-color: transparent;
+     /* No color for the navbar background */
+     border-bottom: 1px solid #ddd;
+     /* Light border at the bottom of the navbar */
+     backdrop-filter: blur(10px);
+     /* Applies a blur effect to the background */
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     /* Optional: Adds soft shadow for depth */
+     position: fixed;
+     /* Fixes the navbar at the top of the page */
+     width: 100%;
+     /* Ensures the navbar spans the full width */
+     top: 0px;
+     /* Ensures the navbar stays at the top of the screen */
+     left: 0;
+     /* Ensures the navbar stays aligned with the left edge */
+     z-index: 1000;
+     /* Keeps the navbar on top of other content */
+     transition: top 0.3s ease;
+     /* Smooth transition for top property changes */
+ }
 
-.navbar.collapsed {
-    transform: translateY(-100%);
-    transition: transform 0.3s ease, top 0.3s ease;
-}
+ .navbar.collapsed {
+     transform: translateY(-100%);
+     transition: transform 0.3s ease, top 0.3s ease;
+ }
 
-.navbar.expanded {
-    transform: translateY(0);
-    transition: transform 0.3s ease, top 0.3s ease;
-}
+ .navbar.expanded {
+     transform: translateY(0);
+     transition: transform 0.3s ease, top 0.3s ease;
+ }
 
 
  .navbar-brand img {
-     height: 50px;
+     height: 40px;
      width: 100%;
      object-fit: contain;
  }
@@ -215,24 +216,57 @@
      object-fit: contain;
  }
 
- .carousel-caption p {
-     font-family: "Outfit", serif;
-     font-optical-sizing: auto;
-     font-size: x-large;
-     font-weight: 1000;
-     color: #000000;
-     -webkit-text-stroke: 0.4px rgb(0, 0, 0);
-     /* Stroke color and width */
-     font-style: normal;
 
+
+ .carousel-caption g {
+    font-family: 'Roboto', sans-serif;
+    font-optical-sizing: auto;
+    font-size: x-large;
+    font-weight: 1500;
+    color: #ffffff;
+    font-style: normal;
+    padding: 5px; /* Adds space inside the border */
+    border: 2px solid #00000000; /* Adds a black border */
+    border-radius: 5px; /* Optional: Rounds the corners of the border */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
+}
+
+
+
+ .containers {
+     background-image: url('images/gb gradient.jpg');
+     background-size: cover;
+     /* Ensures the image covers the entire section */
+     background-repeat: no-repeat;
+     /* Prevents the image from repeating */
+     background-position: center;
+     /* Centers the image */
+     padding: 50px 0;
+     /* Adds padding to the section for better spacing */
+     color: #fff;
+     /* Ensures text is readable against the background */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
  }
 
+ .Feature {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
 
  .Feature img {
      height: 200px;
      width: 200px;
      object-fit: cover;
      border-radius: 10px;
+     margin-bottom: 20px;
+     /* Adds space below the image */
  }
 
  .Feature h3 {
@@ -243,7 +277,7 @@
      font-size: 70px;
      font-weight: 600;
      letter-spacing: 1px;
-
+     text-align: center;
  }
 
  .Feature p {
@@ -255,16 +289,16 @@
      font-weight: 600;
      letter-spacing: 1px;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     text-align: center;
  }
 
  .Feature .row h5 {
      color: rgb(255, 0, 0);
      -webkit-text-stroke: 0.7px rgb(122, 120, 120);
      position: relative;
-     left: -30px;
+
+     text-align: center;
  }
-
-
 
  .card-feature {
      position: relative;
@@ -272,6 +306,7 @@
      height: 220px;
      background: mediumturquoise;
      display: flex;
+     flex-direction: column;
      align-items: center;
      justify-content: center;
      font-size: 25px;
@@ -279,8 +314,8 @@
      border-radius: 15px;
      cursor: pointer;
      margin: 10px;
-     margin-left: 10%;
      overflow: hidden;
+     text-align: center;
  }
 
  .card-feature img {
@@ -288,6 +323,8 @@
      width: 200px;
      object-fit: cover;
      border-radius: 10px;
+     margin-bottom: 10px;
+     /* Adds space between the image and text */
  }
 
  .card-feature::before,
@@ -327,26 +364,56 @@
 
  .card-feature-1:hover:after {
      content: "We ensure your child's safety with secure access, surveillance, and trained staff, providing a safe and worry-free experience.";
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     padding: 10px;
  }
 
  .card-feature-2:hover:after {
      content: "Our tailored curriculum supports developmental growth through hands-on learning, promoting cognitive, emotional, and physical development for each age group";
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     padding: 10px;
  }
 
  .card-feature-3:hover:after {
      content: "Our spacious, clean, and child-friendly daycare is designed for exploration, play, and social interaction, fostering a positive learning environment.";
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     padding: 10px;
  }
 
  .card-feature-4:hover:after {
      content: "Our experienced, certified staff create a nurturing environment where every child feels safe, valued, and encouraged to explore";
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     padding: 10px;
  }
 
  .card-feature-5:hover:after {
      content: "Our enrichment programs such as Art & Craft , Music, Dance, Abacus and Outdoor activities to encourage creativity, critical thinking, and a love for learning";
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     padding: 10px;
  }
 
  .card-feature-6:hover:after {
      content: "We offer flexible care options, including full-time, part-time, and drop-in care, with extended hours to fit your family’s needs.";
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     padding: 10px;
  }
 
 
@@ -678,7 +745,7 @@
      color: #d32f2f;
      /* Bold red */
      text-decoration: none;
-     
+
  }
 
 
@@ -698,16 +765,17 @@
  }
 
  .contact-card .address {
-    font-size: 1.3rem;
-    color: #00eeff; /* Slightly darker grey */
-    margin-top: 10px;
-    line-height: 1.4;
+     font-size: 1.3rem;
+     color: #00eeff;
+     /* Slightly darker grey */
+     margin-top: 10px;
+     line-height: 1.4;
 
-    /* Glow effect */
-    text-shadow: 0 0 5px rgba(247, 244, 244, 0.842), 
-                 0 0 10px rgba(68, 68, 68, 0.4), 
-                 0 0 15px rgba(68, 68, 68, 0.3);
-}
+     /* Glow effect */
+     text-shadow: 0 0 5px rgba(247, 244, 244, 0.842),
+         0 0 10px rgba(68, 68, 68, 0.4),
+         0 0 15px rgba(68, 68, 68, 0.3);
+ }
 
 
  .contact-card .icon {
