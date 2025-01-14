@@ -648,7 +648,7 @@
 
 
  .contact-card {
-     background-color: #ffcdc7;
+     background-color: #000000;
      /* Light pink background */
      width: 600px;
      /* Adjust as needed */
@@ -678,13 +678,14 @@
      color: #d32f2f;
      /* Bold red */
      text-decoration: none;
+     
  }
 
 
  .contact-card .email {
      margin: 10px 0;
      font-size: 1.5rem;
-     color: #555;
+     color: #ffffff;
      /* Dark grey */
  }
 
@@ -692,7 +693,7 @@
      margin: 10px 0;
      font-size: 1.5rem;
      font-weight: 400;
-     color: #555;
+     color: #ffffff;
      /* Dark grey */
  }
 
@@ -707,6 +708,7 @@
                  0 0 10px rgba(68, 68, 68, 0.4), 
                  0 0 15px rgba(68, 68, 68, 0.3);
 }
+
 
  .contact-card .icon {
      font-size: 1.2rem;
